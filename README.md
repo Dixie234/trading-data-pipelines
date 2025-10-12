@@ -5,9 +5,9 @@ To run this project you will need Docker installed on your machine. Once that is
 `docker compose up --build`
 
 This will start:
-Streamlit dashboard: localhost:8501
-pdAmin: localhost:8080
-dbt docs: localhost:8081
+- Streamlit dashboard: `localhost:8501`
+- pdAmin: `localhost:8080`
+- dbt docs: `localhost:8081`
 
 All components for this project are composed within docker-compose.yml - review this file for a full list of container images and their dependencies
 
