@@ -14,10 +14,10 @@ This will start:
 All components for this project are composed within `docker-compose.yml` - review this file for a full list of container images and their dependencies
 
 In summary, here are the main components:
-- A Postgres database which contains all the backing data for the application - running on port 5432
-- A pdAdmin page to enable viewing and editing the Postgres instance - running on port 8080
-- A dbt documentation page for viewing all of the models and their transformations, this is generated using run_docs.py - running on port 8081
-- A Streamlit app displaying some live and static stock data pulled directly from the Postgres database - running on port 8501
+- A `Postgres` database which contains all the backing data for the application - running on `port 5432`
+- A `pdAdmin` page to enable viewing and editing the Postgres instance - running on `port 8080`
+- A `dbt` documentation page for viewing all of the models and their transformations, this is generated using run_docs.py - running on `port 8081`
+- A `Streamlit` app displaying some live and static stock data pulled directly from the Postgres database - running on `port 8501`
 
 Main entrypoint files for viewing the data are:
 1. app.py - a Streamlit app which is hosted on localhost:8501 displaying a stocks dashboard of live cypto prices, and static US corporate data
