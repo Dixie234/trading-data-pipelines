@@ -4,7 +4,8 @@ Project created to test and analyse batch and streaming financial data, with som
 TO RUN THIS PROJECT YOU NEED TO HAVE DOCKER INSTALLED ON YOUR MACHINE
 
 To run the app, clone this repository, run this command to start the app:
-`docker compose up --build` - This builds from 3 separate base images and therefore may timeout if your internet is slow. If it does, you just need to re-input the same command and it will start from the files it already has cached.
+`docker compose up --build` 
+This builds from 3 separate base images and therefore may timeout if your internet is slow. If it does, you just need to re-input the same command and it will start from the files it already has cached.
 
 This will start:
 - Streamlit dashboard: `localhost:8501`
