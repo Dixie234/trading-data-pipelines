@@ -9,8 +9,10 @@ To run the app, clone this repository, run this command to start the app:
 This will start:
 - Streamlit dashboard: `localhost:8501`
 <img width="1799" height="863" alt="image" src="https://github.com/user-attachments/assets/c5347076-9096-446e-8ecc-7c8f2b938785" />
+
 - pdAmin: `localhost:8080`
 <img width="1381" height="719" alt="image" src="https://github.com/user-attachments/assets/af805ca4-01ac-4c2a-9c30-c9307fadc182" />
+
 - dbt docs: `localhost:8081`
 <img width="1391" height="691" alt="image" src="https://github.com/user-attachments/assets/8e2e6a0c-eb6c-4f19-b76b-821863a5fd2f" />
 
