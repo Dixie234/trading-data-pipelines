@@ -1,8 +1,9 @@
 FROM python:3.12-slim
 
 WORKDIR /app
-COPY requirements.txt .
+COPY seed/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-COPY get_crypto_symbols.py .
+COPY settings.json .
+COPY seed/*.py .
 
-CMD ["python", "get_crypto_symbols.py"]
+CMD ["python", "seed_data.py"]

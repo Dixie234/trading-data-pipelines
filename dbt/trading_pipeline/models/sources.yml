@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw_data                
+    database: finance_pipeline           
+    schema: public                   
+    tables:
+      - name: historic_price        
+      - name: binance_symbols
+      - name: live_prices     
+      - name: symbol_sentiment      
+      - name: us_symbols
+      - name: quote
+      - name: symbol_news

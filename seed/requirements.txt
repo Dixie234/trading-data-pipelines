@@ -1,2 +1,8 @@
-finnhub-python
-psycopg2-binary
+aiohttp==3.13.0
+finnhub_python==2.4.25
+psycopg2_binary==2.9.11
+yfinance==0.2.66
+lxml_html_clean==0.4.3
+newspaper3k==0.2.8
+nltk==3.9.2
+nest_asyncio==1.6.0

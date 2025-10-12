@@ -1,0 +1,11 @@
+trading_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: db
+      user: admin
+      password: admin
+      port: 5432
+      dbname: finance_pipeline
+      schema: public

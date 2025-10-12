@@ -21,7 +21,7 @@ cur = conn.cursor()
 with open("settings.json", "r") as s:
     settings = json.load(s)
 
-SYMBOL_LIST = settings["SYMBOL_LIST"]
+STREAM_SYMBOLS = settings["STREAM_SYMBOLS"]
 
 last_update = 0
 def on_message(ws:websocket.WebSocketApp, message:str) -> None:
@@ -44,7 +44,7 @@ def on_message(ws:websocket.WebSocketApp, message:str) -> None:
             conn.commit()
 
 def on_open(ws:websocket.WebSocketApp) -> None:
-    for symbol in SYMBOL_LIST:
+    for symbol in STREAM_SYMBOLS:
         ws.send(json.dumps({"type": "subscribe", "symbol": symbol}))
 
 def on_error(ws, error):

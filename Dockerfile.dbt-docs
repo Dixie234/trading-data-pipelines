@@ -1,0 +1,10 @@
+FROM python:3.11-slim
+
+RUN pip install dbt-postgres==1.8.2
+
+WORKDIR /usr/app/trading_pipeline
+COPY ./dbt/trading_pipeline /usr/app/trading_pipeline
+RUN dbt deps
+COPY run_docs.py /usr/app/trading_pipeline/run_docs.py
+
+CMD ["python", "run_docs.py"]

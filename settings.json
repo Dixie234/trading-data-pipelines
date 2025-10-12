@@ -1,8 +1,15 @@
 {
-    "SYMBOL_LIST": [
+    "STREAM_SYMBOLS": [
         "BINANCE:BTCUSDT",
         "BINANCE:ETHUSDT",
         "BINANCE:SOLUSDT",
         "BINANCE:ADAUSDT"
+    ],
+    "BATCH_SYMBOLS": [
+        "AAPL",
+        "MSFT",
+        "TSLA",
+        "GOOGL",
+        "AMZN"
     ]
 }
