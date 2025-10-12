@@ -24,7 +24,7 @@ services:
       db:
         condition: service_healthy
     environment:
-      FINNHUB_API_KEY: ${FINNHUB_API_KEY}
+      FINNHUB_API_KEY: d3l4jg9r01qp3ucqdet0d3l4jg9r01qp3ucqdetg
       DATABASE_URL: postgresql://admin:admin@db:5432/finance_pipeline
 
   dbt:
