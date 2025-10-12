@@ -20,8 +20,8 @@ In summary, here are the main components:
 - A `Streamlit` app displaying some live and static stock data pulled directly from the Postgres database - running on `port 8501`
 
 Main entrypoint files for viewing the data are:
-1. app.py - a Streamlit app which is hosted on localhost:8501 displaying a stocks dashboard of live cypto prices, and static US corporate data
-2. stream_listener.py - a web socket responsible for getting live update data for crypto stocks and inserting them in the Postgres database
+1. `app.py` - a Streamlit app which is hosted on localhost:8501 displaying a stocks dashboard of live cypto prices, and static US corporate data
+2. `stream_listener.py` - a web socket responsible for getting live update data for crypto stocks and inserting them in the Postgres database
 
 The contents of the Project folders are as follows:
 `./dbt` - contains a dbt project for processing model transformations
