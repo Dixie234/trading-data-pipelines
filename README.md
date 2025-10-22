@@ -40,3 +40,7 @@ The project also contains 2 dockerfiles - one for managing the project as a whol
 `./seed` also contains it's own dockerfile so that the commands can be executed as their own image which will depend on the Postgres instance spinning up, this way the data will always be inserted on container startup and ready to query
 
 NOTE: The collection of sentiment data requires approximately 1000+ api requests to various news websites, all with retry logic, therefore initial container startup is slow.
+
+# Docker compose layout
+<img width="721" height="301" alt="image" src="https://github.com/user-attachments/assets/4afcddce-d04b-4830-af09-529f87a40883" />
+
